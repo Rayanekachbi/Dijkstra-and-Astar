@@ -70,7 +70,7 @@ public class WeightedGraph {
     
     //Test de la classe.
       public static void main(String[] args) {
-            int vertices = 6;
+            //int vertices = 6;
             Graph graph = new Graph();
             graph.addVertex(10);
             graph.addVertex(10);

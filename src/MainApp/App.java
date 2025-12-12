@@ -3,7 +3,7 @@
 
 package MainApp;
 
-import MainApp.WeightedGraph.Edge;
+//import MainApp.WeightedGraph.Edge;
 import MainApp.WeightedGraph.Graph;
 import MainApp.WeightedGraph.Vertex;
 
@@ -258,7 +258,7 @@ public class App {
 			//On met � jour l'affichage
 			try {
 	    	    board.update(graph, min_v);
-	    	    Thread.sleep(10);
+	    	    Thread.sleep(2);
 	    	} catch(InterruptedException e) {
 	    	    System.out.println("stop");
 	    	}
@@ -343,7 +343,7 @@ public class App {
 			//On met � jour l'affichage
 			try {
 	    	    board.update(graph, min_v);
-	    	    Thread.sleep(10);
+	    	    Thread.sleep(2);
 	    	} catch(InterruptedException e) {
 	    	    System.out.println("stop");
 	    	}
@@ -370,7 +370,7 @@ public class App {
 		//Lecture de la carte et cr�ation du graphe
 		try {
 			//TODO: obtenir le fichier qui d�crit la carte
-		      File myObj = new File("test1.txt");
+		      File myObj = new File("graph.txt");
 		      Scanner myReader = new Scanner(myObj);
 		      String data = "";
 		      //On ignore les deux premi�res lignes
@@ -538,7 +538,7 @@ public class App {
               
 		      //�criture du chemin dans un fichier de sortie
 		      try {
-			      File file = new File("out.txt");
+			      File file = new File("graphSortie.txt");
 			      if (!file.exists()) {
 			    	  file.createNewFile();
 			      } 
